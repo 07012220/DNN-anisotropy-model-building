@@ -1,3 +1,7 @@
+""" =====================================================================================
+                         Copyright (c) 2020 You Nan, n.you@u.nus.edu                      
+    ===================================================================================== """
+
 from utilis_prediction import *
 import os
 from scipy.io import loadmat, savemat
