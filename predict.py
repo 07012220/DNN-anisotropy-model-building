@@ -65,11 +65,11 @@ plt.show()
 
 # save predictions
 savemat('pred/predictions_CN.mat',
-        {'k0': y_CN[:, 0], 'mu0': y_CN[:, 1], 'alpha': y_CN[0, 2], 'epsilon': epsilonCN, 'gamma': gammaCN,
-         'delta': deltaCN})
+        {'k0': y_CN[:, 0], 'mu0': y_CN[:, 1], 'alpha': y_CN[:, 2], 'dc': crackdCN,
+        'epsilon': epsilonCN, 'gamma': gammaCN, 'delta': deltaCN})
 savemat('pred/predictions_US.mat',
-        {'k0': y_US[:, 0], 'mu0': y_US[:, 1], 'alpha': y_US[0, 2], 'epsilon': epsilonUS, 'gamma': gammaUS,
-         'delta': deltaUS})
+        {'k0': y_US[:, 0], 'mu0': y_US[:, 1], 'alpha': y_US[:, 2], 'dc': crackdUS,
+        'epsilon': epsilonUS, 'gamma': gammaUS, 'delta': deltaUS})
 savemat('pred/predictions_Lab.mat',
-        {'k0': y_Lab[:, 0], 'mu0': y_Lab[:, 1], 'alpha': y_Lab[0, 2], 'epsilon': epsilonLab, 'gamma': gammaLab,
-         'delta': deltaLab, 'c33': c33_dnnLab, 'c44': c44_dnnLab})
+        {'k0': y_Lab[:, 0], 'mu0': y_Lab[:, 1], 'alpha': y_Lab[:, 2], 'epsilon': epsilonLab,
+        'gamma': gammaLab, 'delta': deltaLab, 'c33': c33_dnnLab, 'c44': c44_dnnLab})
